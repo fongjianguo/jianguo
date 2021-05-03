@@ -19,13 +19,6 @@ link = headers + str(b.find(class_="file_item").text).strip()
 print(link)
 
 
-# In[6]:
-
-
-alink = b.select('.container file_item_container')
-print(alink)
-
-
 import pandas as pd
 newspd = pd.read_excel(link, encoding = "utf-8")
 newspd.head()
